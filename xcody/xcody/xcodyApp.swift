@@ -11,7 +11,7 @@ import SwiftUI
 struct xcodyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView()
         }
     }
 }
