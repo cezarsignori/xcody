@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		AB7080422DCBCFBA00D3CB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7080282DCBCFB900D3CB4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB70802F2DCBCFB900D3CB4C;
+			remoteInfo = xcody;
+		};
+		AB70804C2DCBCFBA00D3CB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7080282DCBCFB900D3CB4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB70802F2DCBCFB900D3CB4C;
+			remoteInfo = xcody;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB7080302DCBCFB900D3CB4C /* xcody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7080412DCBCFBA00D3CB4C /* xcodyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcodyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB70804B2DCBCFBA00D3CB4C /* xcodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AB7080322DCBCFB900D3CB4C /* xcody */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = xcody;
+			sourceTree = "<group>";
+		};
+		AB7080442DCBCFBA00D3CB4C /* xcodyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = xcodyTests;
+			sourceTree = "<group>";
+		};
+		AB70804E2DCBCFBA00D3CB4C /* xcodyUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = xcodyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB70802D2DCBCFB900D3CB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB70803E2DCBCFBA00D3CB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7080482DCBCFBA00D3CB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7080272DCBCFB900D3CB4C = {
+			isa = PBXGroup;
+			children = (
+				AB7080322DCBCFB900D3CB4C /* xcody */,
+				AB7080442DCBCFBA00D3CB4C /* xcodyTests */,
+				AB70804E2DCBCFBA00D3CB4C /* xcodyUITests */,
+				AB7080312DCBCFB900D3CB4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7080312DCBCFB900D3CB4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7080302DCBCFB900D3CB4C /* xcody.app */,
+				AB7080412DCBCFBA00D3CB4C /* xcodyTests.xctest */,
+				AB70804B2DCBCFBA00D3CB4C /* xcodyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB70802F2DCBCFB900D3CB4C /* xcody */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7080552DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcody" */;
+			buildPhases = (
+				AB70802C2DCBCFB900D3CB4C /* Sources */,
+				AB70802D2DCBCFB900D3CB4C /* Frameworks */,
+				AB70802E2DCBCFB900D3CB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AB7080322DCBCFB900D3CB4C /* xcody */,
+			);
+			name = xcody;
+			packageProductDependencies = (
+			);
+			productName = xcody;
+			productReference = AB7080302DCBCFB900D3CB4C /* xcody.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB7080402DCBCFBA00D3CB4C /* xcodyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7080582DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcodyTests" */;
+			buildPhases = (
+				AB70803D2DCBCFBA00D3CB4C /* Sources */,
+				AB70803E2DCBCFBA00D3CB4C /* Frameworks */,
+				AB70803F2DCBCFBA00D3CB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7080432DCBCFBA00D3CB4C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AB7080442DCBCFBA00D3CB4C /* xcodyTests */,
+			);
+			name = xcodyTests;
+			packageProductDependencies = (
+			);
+			productName = xcodyTests;
+			productReference = AB7080412DCBCFBA00D3CB4C /* xcodyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB70804A2DCBCFBA00D3CB4C /* xcodyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB70805B2DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcodyUITests" */;
+			buildPhases = (
+				AB7080472DCBCFBA00D3CB4C /* Sources */,
+				AB7080482DCBCFBA00D3CB4C /* Frameworks */,
+				AB7080492DCBCFBA00D3CB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB70804D2DCBCFBA00D3CB4C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AB70804E2DCBCFBA00D3CB4C /* xcodyUITests */,
+			);
+			name = xcodyUITests;
+			packageProductDependencies = (
+			);
+			productName = xcodyUITests;
+			productReference = AB70804B2DCBCFBA00D3CB4C /* xcodyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7080282DCBCFB900D3CB4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					AB70802F2DCBCFB900D3CB4C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					AB7080402DCBCFBA00D3CB4C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = AB70802F2DCBCFB900D3CB4C;
+					};
+					AB70804A2DCBCFBA00D3CB4C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = AB70802F2DCBCFB900D3CB4C;
+					};
+				};
+			};
+			buildConfigurationList = AB70802B2DCBCFB900D3CB4C /* Build configuration list for PBXProject "xcody" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB7080272DCBCFB900D3CB4C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AB7080312DCBCFB900D3CB4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB70802F2DCBCFB900D3CB4C /* xcody */,
+				AB7080402DCBCFBA00D3CB4C /* xcodyTests */,
+				AB70804A2DCBCFBA00D3CB4C /* xcodyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB70802E2DCBCFB900D3CB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB70803F2DCBCFBA00D3CB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7080492DCBCFBA00D3CB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB70802C2DCBCFB900D3CB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB70803D2DCBCFBA00D3CB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7080472DCBCFBA00D3CB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB7080432DCBCFBA00D3CB4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB70802F2DCBCFB900D3CB4C /* xcody */;
+			targetProxy = AB7080422DCBCFBA00D3CB4C /* PBXContainerItemProxy */;
+		};
+		AB70804D2DCBCFBA00D3CB4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB70802F2DCBCFB900D3CB4C /* xcody */;
+			targetProxy = AB70804C2DCBCFBA00D3CB4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB7080532DCBCFBA00D3CB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB7080542DCBCFBA00D3CB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AB7080562DCBCFBA00D3CB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = xcody/xcody.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xcody/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcody;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB7080572DCBCFBA00D3CB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = xcody/xcody.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xcody/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcody;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB7080592DCBCFBA00D3CB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcodyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcody.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/xcody";
+			};
+			name = Debug;
+		};
+		AB70805A2DCBCFBA00D3CB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcodyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcody.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/xcody";
+			};
+			name = Release;
+		};
+		AB70805C2DCBCFBA00D3CB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcodyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = xcody;
+			};
+			name = Debug;
+		};
+		AB70805D2DCBCFBA00D3CB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csginori.xcodyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = xcody;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB70802B2DCBCFB900D3CB4C /* Build configuration list for PBXProject "xcody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7080532DCBCFBA00D3CB4C /* Debug */,
+				AB7080542DCBCFBA00D3CB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7080552DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7080562DCBCFBA00D3CB4C /* Debug */,
+				AB7080572DCBCFBA00D3CB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7080582DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcodyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7080592DCBCFBA00D3CB4C /* Debug */,
+				AB70805A2DCBCFBA00D3CB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB70805B2DCBCFBA00D3CB4C /* Build configuration list for PBXNativeTarget "xcodyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB70805C2DCBCFBA00D3CB4C /* Debug */,
+				AB70805D2DCBCFBA00D3CB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7080282DCBCFB900D3CB4C /* Project object */;
+}
