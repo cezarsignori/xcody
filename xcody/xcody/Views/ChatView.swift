@@ -86,10 +86,11 @@ struct ChatInputField: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            TextField("Type your message...", text: $text, axis: .vertical)
-                .textFieldStyle(.roundedBorder)
-                .focused($isFocused)
-                .frame(minHeight: 40)
+            TextEditor(text: $text)
+                        .focused($isFocused)
+                        .frame(height: max(40, min(120, textHeight())))
+                        .scrollContentBackground(.hidden)
+                        .cornerRadius(8)
             
             Button(action: onSend) {
                 Image(systemName: "arrow.up.circle.fill")
@@ -101,6 +102,12 @@ struct ChatInputField: View {
         .padding()
         .background(Color.gray.opacity(0.1))
     }
+    
+    private func textHeight() -> CGFloat {
+            let lineHeight: CGFloat = 20 // Approximate height of a single line
+            let numberOfLines = text.components(separatedBy: "\n").count
+            return CGFloat(numberOfLines) * lineHeight
+        }
 }
 
 // Preview provider
