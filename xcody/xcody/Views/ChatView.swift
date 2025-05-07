@@ -15,7 +15,7 @@ struct ChatView: View {
                 ScrollView {
                     LazyVStack(spacing: 12) {
                         ForEach(chatService.messages) { message in
-                            MessageBubble(message: message)
+                            MessageBubble(message: message).id(message.id)
                         }
                     }
                     .padding()
@@ -63,11 +63,19 @@ struct MessageBubble: View {
             if message.isUser { Spacer() }
             
             VStack(alignment: message.isUser ? .trailing : .leading) {
-                Text(message.content)
-                    .padding(12)
-                    .background(message.isUser ? Color.blue : Color.gray.opacity(0.2))
-                    .foregroundColor(message.isUser ? .white : .primary)
-                    .cornerRadius(16)
+                Group {
+                    switch message.type {
+                    case .text:
+                        Text(message.content)
+                            .textSelection(.enabled)
+                    case .code(let language):
+                        CodeBlockView(code: message.content, language: language)
+                    }
+                }
+                .padding(12)
+                .background(message.isUser ? Color.blue : Color.gray.opacity(0.2))
+                .foregroundColor(message.isUser ? .white : .primary)
+                .cornerRadius(16)
                 
                 Text(message.timestamp.formatted(.dateTime.hour().minute()))
                     .font(.caption2)
@@ -87,10 +95,10 @@ struct ChatInputField: View {
     var body: some View {
         HStack(spacing: 12) {
             TextEditor(text: $text)
-                        .focused($isFocused)
-                        .frame(height: max(40, min(120, textHeight())))
-                        .scrollContentBackground(.hidden)
-                        .cornerRadius(8)
+                .focused($isFocused)
+                .frame(height: calculateHeight())
+                .scrollContentBackground(.hidden)
+                .cornerRadius(8)
             
             Button(action: onSend) {
                 Image(systemName: "arrow.up.circle.fill")
@@ -103,11 +111,16 @@ struct ChatInputField: View {
         .background(Color.gray.opacity(0.1))
     }
     
-    private func textHeight() -> CGFloat {
-            let lineHeight: CGFloat = 20 // Approximate height of a single line
-            let numberOfLines = text.components(separatedBy: "\n").count
-            return CGFloat(numberOfLines) * lineHeight
-        }
+    private func calculateHeight() -> CGFloat {
+        let lineHeight: CGFloat = 20
+        let minHeight: CGFloat = lineHeight
+        let maxHeight: CGFloat = lineHeight * 6 // Maximum 6 lines
+        
+        let numberOfLines = text.components(separatedBy: "\n").count
+        let calculatedHeight = lineHeight * CGFloat(numberOfLines)
+        
+        return max(minHeight, min(calculatedHeight + 16, maxHeight))
+    }
 }
 
 // Preview provider

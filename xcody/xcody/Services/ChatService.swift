@@ -3,15 +3,26 @@ import Combine
 
 class ChatService: ObservableObject {
     @Published var messages: [ChatMessage] = []
-    private var cancellables = Set<AnyCancellable>()
     
-    private let mockResponses = [
-        "I'm here to help! What can I do for you?",
-        "That's an interesting question. Let me think about it...",
-        "Based on my analysis, I would recommend...",
-        "Could you please provide more details?",
-        "I understand your request. Here's what I suggest..."
+    private let mockResponses: [ChatMessage] = [
+        ChatMessage(content: "Hello! How can I help you today?", isUser: false),
+        ChatMessage(
+            content: """
+            struct ContentView: View {
+                var body: some View {
+                    Text("Hello, World!")
+                }
+            }
+            """,
+            isUser: false,
+            type: .code(language: "swift")
+        ),
+        ChatMessage(content: "Can you explain this code?", isUser: false),
+        ChatMessage(content: "This is a basic SwiftUI view structure.", isUser: false)
     ]
+    private var mockCurrentMessageIndex = -1;
+    
+    private var cancellables = Set<AnyCancellable>()
     
     func sendMessage(_ content: String) {
         let userMessage = ChatMessage(content: content, isUser: true)
@@ -22,9 +33,18 @@ class ChatService: ObservableObject {
             .autoconnect()
             .first()
             .sink { [weak self] _ in
-                let response = self?.mockResponses.randomElement() ?? "I'm not sure how to respond to that."
-                let aiMessage = ChatMessage(content: response, isUser: false)
-                self?.messages.append(aiMessage)
+                guard let self = self else { return }
+                            
+                self.mockCurrentMessageIndex += 1
+                
+                let response: ChatMessage
+                if self.mockCurrentMessageIndex < self.mockResponses.count {
+                    response = self.mockResponses[self.mockCurrentMessageIndex]
+                } else {
+                    response = ChatMessage(content: "I can't respond to that", isUser: false)
+                }
+                
+                self.messages.append(response)
             }
             .store(in: &cancellables)
     }
